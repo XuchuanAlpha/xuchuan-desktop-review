@@ -1,17 +1,48 @@
 {
-  "version": "35.4.1",
+  "version": "35.4.1b",
   "status": "review_candidate",
+  "publication": "Developer self-review; Windows, live API and independent verification pending",
   "source_filename": "xuchuan_desktop.pyw",
   "notes_filename": "xuchuan-release-notes.md",
-  "source_sha256": "10e4cdf75efa4476a6b0bc4ab2ab63e920521a7c23dfbed25d290fbb102dfc57",
-  "review_status": "Developer self-review completed | 砚舟 (GPT-6.2 Sol Medium) | 2026-11-21T02:30:10+00:00 | xuchuan_desktop.pyw SHA-256 10e4cdf7",
-  "publication": "Frozen public source-review snapshot",
-  "notes_sha256": "789f1158dc578e62441c74eb970c641311595cc1179768137280438497255720",
+  "source_sha256": "e777e86fcd76c43465b7f9a153397753bba23320c68cdca9a8e50aeef0fa8abf",
+  "notes_sha256": "365e196a98a431cff83b4e966750b6ae9923be3126c43cb39d04eb70b0f2cdbc",
+  "source_ancestor_version": "35.4.1a",
+  "source_baseline_sha256": "769f73d711f44e90d2aab34cb799f7898ac00a247b3090e8b2d234f59d5e8bf8",
+  "review_status": "Developer self-review | 砚舟 (GPT-6.2 Sol Medium) | 2026-11-23T08:14:06+00:00 | xuchuan_desktop.pyw SHA-256 e777e86f",
   "developers": [
     {
-      "version": "35.4.1",
       "name": "砚舟（GPT-6.2 Sol Medium）",
-      "role": "Candidate developer"
+      "role": "implementation, tests, packaging"
     }
-  ]
+  ],
+  "contributors": [
+    {
+      "name": "精华",
+      "role": "scope, decisions, acceptance design"
+    },
+    {
+      "name": "十一七（Claude Sonnet 5.5 Medium）",
+      "role": "work order and witness template"
+    },
+    {
+      "name": "小序 (DeepSeek V4.1-Flash-1017, reasoning low)",
+      "role": "original audit and retention proposals"
+    }
+  ],
+  "integrity_files": {
+    "xuchuan_desktop.pyw": "e777e86fcd76c43465b7f9a153397753bba23320c68cdca9a8e50aeef0fa8abf",
+    "xuchuan-release-notes.md": "365e196a98a431cff83b4e966750b6ae9923be3126c43cb39d04eb70b0f2cdbc",
+    "submission_guidance.py": "0acead5ce2759fbccf73a8eefe1198e47b35f95bcbd96a43a4baaf57598edca1",
+    "DEVELOPMENT_RULES.md": "dc4565f3d0ce75111005a441929e700a4709acd3789fa364bdeda86fd0cfa704",
+    "requirements-format-card.md": "46e10308ea3aa46625c030ed86364436f9d5f5dc308abe95fe656ba73b7dcbb3",
+    "EXAMPLE_requirements_list.md": "8c1e2a8f35b54a79e15b1b0f2f8de6236aa6562c2ea1685c5db00ea195e6e9be",
+    "EXAMPLE_appendix.md": "4f1aefd81c5ca16b102325391c220bce26298bcf9d03960896ace51b8fdbd90b",
+    "xuchuan-submission-format.md": "a259a1ee8291eb3da45974519e4670af06df3aa1cae16b627b17b068d97f23ad",
+    "audit_trail.py": "91bd920bda2f3665b720250ebf2a0296b0b096a5a5a37e8489cabe825377082a"
+  },
+  "network_calls": {
+    "desktop": "HTTPS to configured DeepSeek chat, public-search and attachment endpoints under existing outbound approval",
+    "submission_guidance": "none; local files and SQLite only",
+    "audit_trail": "none; SQLite and local SHA-256 only"
+  }
 }
